@@ -18,14 +18,15 @@ In this segment of the project, Steve wanted to do some additional research and 
 ### 2.1 Refactor VBA Code
 
 The first task of this project was to refactor the VBA code from the completed module to accomplish each of the following steps:
-- [x] Create a tickerIndex and set it equal to zero before looping over the rows
+
+- [x] **Create a tickerIndex and set it equal to zero before looping over the rows**
 
 ````
 Dim tickerIndex As Integer
     tickerIndex = 0
 ````
 
-- [x] Create arrays for tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices 
+- [x] **Create arrays for tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices** 
 
 ````
     'Initialize array of all tickers
@@ -52,7 +53,7 @@ Dim tickerIndex As Integer
     Dim tickerEndingPrices(12) As Single
  ````
  
-- [x] Ensure the tickerIndex is used to access the stock ticker index for the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays
+- [x] **Ensure the tickerIndex is used to access the stock ticker index for the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays**
 
 ````
         ''2a) Create a for loop to initialize the tickerVolumes to zero.
@@ -63,8 +64,8 @@ Dim tickerIndex As Integer
         Next i
 ````
 
-- [x] Make sure the script loops through stock data, reading and storing tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices 
-Based on the results, overall, 2017 stocks outperformed 2018 stocks. In 2017, eleven out of twelve stocks analyzed had a positive return, whereas, in 2018, all but two stocks (ENPH and RUN) had positive returns. 
+- [x] **Make sure the script loops through stock data, reading and storing tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices 
+Based on the results, overall, 2017 stocks outperformed 2018 stocks. In 2017, eleven out of twelve stocks analyzed had a positive return, whereas, in 2018, all but two stocks (ENPH and RUN) had positive returns.**
 
 ````
     ''2b) Loop over all the rows in the spreadsheet.
@@ -106,20 +107,24 @@ Based on the results, overall, 2017 stocks outperformed 2018 stocks. In 2017, el
     
     Next i
    ````
-   
+Overall, 2017 stocks outperformed stocks in 2018.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/95978097/153908742-b7c8d5a2-1478-4e8b-8097-4c5b44fe69e5.png" />
+</p>
+
 In 2017 in particular, some stocks - including DQ - had a return greater than 100%:
 - DQ with 199.4%
 - ENPH with 129.5%
 - FSLR with 101.3%
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/95978097/153909026-039132a2-dbe5-40bc-96ca-a87aace53175.png" />
+</p>
+
 Alternatively, in 2018, ten out of twelve stocks had negative returns (including DQ) and only two had positive: 
 - ENPH  with 81.9%
 - RUN with 84.0%
 
-
-<img width="232" alt="Screen Shot 2022-02-14 at 8 50 37 AM" src="https://user-images.githubusercontent.com/95978097/153908742-b7c8d5a2-1478-4e8b-8097-4c5b44fe69e5.png">
-
-
-<img width="232" alt="Screen Shot 2022-02-14 at 8 52 15 AM" src="https://user-images.githubusercontent.com/95978097/153909026-039132a2-dbe5-40bc-96ca-a87aace53175.png">
 <img width="232" alt="Screen Shot 2022-02-14 at 9 05 26 AM" src="https://user-images.githubusercontent.com/95978097/153911507-1188dfe4-668d-42f2-9f88-6ae84294dd4e.png">
 <img width="232" alt="Screen Shot 2022-02-14 at 9 05 42 AM" src="https://user-images.githubusercontent.com/95978097/153911544-f18e1647-cdee-4a43-8423-74845d221be9.png">
